@@ -1,0 +1,24 @@
+ALGORITHM countSentence
+var
+s: string,
+numchar : INTEGER:=0,
+numwords : INTEGER:=0,
+numvowels : INTEGER:=0,
+i : INTEGER:=0;
+  write('write a sentence .');
+    Read(s);
+WHILE ("write a sentence .") DO
+IF (s[i] < >  ".") THEN
+    numchar := s.length();
+END_IF
+IF (s[i]  = " ") THEN
+    numword := numword + 1 ;
+END_IF
+IF (s[i] = 'a' OR s[i] = 'e' OR s[i] = 'i' OR s[i] = 'o' OR s[i] = 'u' OR s[i] = 'y')
+    numvowels := numvowels + 1 ;
+END_IF
+i := i + 1;
+END_WHILE
+write (numchar);
+write (numword);
+write (numvowels);
